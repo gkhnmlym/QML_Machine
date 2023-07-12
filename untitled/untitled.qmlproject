@@ -2,7 +2,6 @@ import QmlProject
 
 Project {
     mainFile: "content/App.qml"
-    mainUiFile: "content/Screen01.ui.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {
@@ -56,10 +55,6 @@ Project {
     }
 
     Files {
-        filter: "*.qsb"
-    }
-
-    Files {
         filter: "*.mesh"
         directory: "asset_imports"
     }
@@ -89,11 +84,11 @@ Project {
     importPaths: [ "imports", "asset_imports" ]
 
     /* Required for deployment */
-    targetDirectory: "/opt/Machine"
+    targetDirectory: "/opt/untitled"
 
-    qdsVersion: "4.2"
+    qdsVersion: "3.9"
 
-    quickVersion: "6.5"
+    quickVersion: "6.2"
 
     /* If any modules the project imports require widgets (e.g. QtCharts), widgetApp must be true */
     widgetApp: true
